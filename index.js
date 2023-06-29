@@ -1,13 +1,33 @@
 function isPalindrome(word) {
-  // Write your algorithm here
-}
+  //Iterate through the word to the middle.
+  for(i = 0; i< word.length / 2; i++) {
+    const j = word.length - 1 -i;
+    const starting =word[i];
+    const ending =word[j];
+    if(starting !== ending) {
+    //  If they are not similar return false.
+      return false;
+  
+      }
+    }
+    //If they are not similar return false.
+    return true;
+
+  }
+
 
 /* 
-  Add your pseudocode here
+Pseudocode;
+   Iterate through the word to the middle.
+   If they are not similar return false.
+   Taking the first letter comparing it with the last if they are the same  up to the middle return true.
+
 */
 
 /*
-  Add written explanation of your solution here
+Iterate through the word to the middle.If they are not similar return false.
+Taking the first letter comparing it with the last if they are the same  up to the middle return true.
+  
 */
 
 // You can run `node index.js` to view these console logs
